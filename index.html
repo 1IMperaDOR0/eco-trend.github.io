@@ -1,50 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Trend</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Trend | Sustentabilidade em Primeiro Lugar</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <header>
-            <div class="row">
-                <img class="logo" src="src/assets/images/logo.png"/>
-                <div class="form-control">
-                    <input type="text" name="search" id="search" placeholder="O que você está busacando?"/>
-                    <img class="search" src="src/assets/images/search.png"/>
-                </div>
-                <div class="menu">
-                    <img class="menu_open" src="src/assets/images/menu_open"/>
-                    <nav>
-                        <img class="menu_close" src="src/assets/images/menu_close"/>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="row">
-                <section class="col-md-5">
-                    ...
-                </section>
-                <section class="col-md-5">
-                    ...
-                </section>
-            </div>
-        </main>
-        <footer>
-            <div class="row">
-                ...
-            </div>
-        </footer>
+      <a class="navbar-brand fw-bold" href="#">🌱 Eco-Trend</a>
+      <div class="navbar-toggler" type="div" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">🏠 Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="src/pages/categorias.html">📝 Categorias</a></li>
+          <li class="nav-item"><a class="nav-link" href="src/pages/contato.html">📞 Contato</a></li>   
+          <li class="nav-item"><a class="nav-link" href="#">🛒 Carrinho</a></li>
+        </ul>
+      </div>
     </div>
-    <script src="src/js/script.js"></script>
+  </nav>
+
+  <div id="carouselEcoTrend" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="" class="d-block w-100" alt="Moda Sustentável">
+      </div>
+      <div class="carousel-item">
+        <img src="" class="d-block w-100" alt="Beleza Natural">
+      </div>
+      <div class="carousel-item">
+        <img src="" class="d-block w-100" alt="Tecnologia Verde">
+      </div>
+    </div>
+    <div class="carousel-control-prev" type="div" data-bs-target="#carouselEcoTrend" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </div>
+    <div class="carousel-control-next" type="div" data-bs-target="#carouselEcoTrend" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="category-title">Roupas e Acessórios Sustentáveis</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Camisa Sustentável">
+          <div class="card-body">
+            <h5 class="card-title">Camisa de Algodão Orgânico</h5>
+            <p class="card-text">R$ 120,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Camisa Sustentável">
+          <div class="card-body">
+            <h5 class="card-title">Camisa de Algodão Orgânico</h5>
+            <p class="card-text">R$ 120,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Camisa Sustentável">
+          <div class="card-body">
+            <h5 class="card-title">Camisa de Algodão Orgânico</h5>
+            <p class="card-text">R$ 120,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Camisa Sustentável">
+          <div class="card-body">
+            <h5 class="card-title">Camisa de Algodão Orgânico</h5>
+            <p class="card-text">R$ 120,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+        <a href="categorias.html" class="btn btn-eco">Saiba Mais</a>
+    </div>
+
+    <h2 class="category-title">Beleza e Cuidados Pessoais</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Cosmético Natural">
+          <div class="card-body">
+            <h5 class="card-title">Sabonete Vegano</h5>
+            <p class="card-text">R$ 25,00</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Cosmético Natural">
+          <div class="card-body">
+            <h5 class="card-title">Sabonete Vegano</h5>
+            <p class="card-text">R$ 25,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Cosmético Natural">
+          <div class="card-body">
+            <h5 class="card-title">Sabonete Vegano</h5>
+            <p class="card-text">R$ 25,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Cosmético Natural">
+          <div class="card-body">
+            <h5 class="card-title">Sabonete Vegano</h5>
+            <p class="card-text">R$ 25,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+        <a href="categorias.html" class="btn btn-eco">Saiba Mais</a>
+    </div>
+
+    <h2 class="category-title">Itens para Casa</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Utensílios de Bambu">
+          <div class="card-body">
+            <h5 class="card-title">Kit de Utensílios de Bambu</h5>
+            <p class="card-text">R$ 80,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Utensílios de Bambu">
+          <div class="card-body">
+            <h5 class="card-title">Kit de Utensílios de Bambu</h5>
+            <p class="card-text">R$ 80,00</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Utensílios de Bambu">
+          <div class="card-body">
+            <h5 class="card-title">Kit de Utensílios de Bambu</h5>
+            <p class="card-text">R$ 80,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Utensílios de Bambu">
+          <div class="card-body">
+            <h5 class="card-title">Kit de Utensílios de Bambu</h5>
+            <p class="card-text">R$ 80,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+        <a href="src/pages/categorias.html" class="btn btn-eco">Saiba Mais</a>
+    </div>
+
+    <h2 class="category-title">Tecnologia Verde</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Carregador Solar">
+          <div class="card-body">
+            <h5 class="card-title">Carregador Solar Portátil</h5>
+            <p class="card-text">R$ 150,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Carregador Solar">
+          <div class="card-body">
+            <h5 class="card-title">Carregador Solar Portátil</h5>
+            <p class="card-text">R$ 150,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Carregador Solar">
+          <div class="card-body">
+            <h5 class="card-title">Carregador Solar Portátil</h5>
+            <p class="card-text">R$ 150,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="" class="card-img-top" alt="Carregador Solar">
+          <div class="card-body">
+            <h5 class="card-title">Carregador Solar Portátil</h5>
+            <p class="card-text">R$ 150,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+        <a href="categorias.html" class="btn btn-eco">Saiba Mais</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Eco-Trend | Produtos Sustentáveis para um Futuro Melhor 🌍</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
