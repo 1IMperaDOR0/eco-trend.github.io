@@ -3,11 +3,24 @@ body {
 }
 
 .navbar {
-    background-color: #2e7d32; /* verde sustentável */
+    background-color: #2e7d32;
 }
 
 .navbar-brand, .nav-link, .navbar-toggler-icon {
     color: #fff !important;
+}
+
+a.nav-link {
+    border-bottom: 2px solid #2e7d32;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.carousel-item img {
+  max-height: 110vh;
+  object-fit: cover;
 }
 
 .category-title {
@@ -17,12 +30,13 @@ body {
     text-transform: uppercase;
 }
 
-.card img {
-    height: 200px;
+.col img {
+    height: 450px;
     object-fit: cover;
+    width: 100%;
 }
 
-.btn-eco {
+button.btn-eco {
   background-color: #2e7d32;
   color: #fff;
   font-weight: bold;
@@ -32,10 +46,10 @@ body {
   display: inline-block;
 }
 
-.btn-eco:hover {
+button.btn-eco:hover {
   background-color: #1b5e20;
   color: #fff;
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 footer {
