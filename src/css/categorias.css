@@ -76,6 +76,23 @@ body {
 }
 
 /* Header com gradiente */
+.header-gradient {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
 .bg-gradient-to-r {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
     position: relative;
@@ -291,6 +308,7 @@ section {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -301,26 +319,37 @@ section {
     animation: fadeInUp 0.6s ease-out;
 }
 
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
-.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.4s;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
     .card-img-top {
         height: 150px;
     }
-    
+
     .card-body {
         padding: 1rem;
     }
-    
+
     .btn {
         padding: 0.5rem 1rem;
         font-size: 0.875rem;
     }
-    
+
     .h3 {
         font-size: 1.5rem;
     }
@@ -331,11 +360,11 @@ section {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
     .card-img-top {
         height: 120px;
     }
-    
+
     .btn-outline-success {
         padding: 0.375rem 0.75rem;
         font-size: 0.75rem;
@@ -374,6 +403,7 @@ html {
     0% {
         background-position: -200px 0;
     }
+
     100% {
         background-position: calc(200px + 100%) 0;
     }
@@ -390,18 +420,18 @@ footer {
 }
 
 .footer h5 {
-  font-weight: bold;
-  margin-bottom: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .footer a {
-  color: #c8e6c9;
-  text-decoration: none;
-  transition: color 0.3s;
+    color: #c8e6c9;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 /* Utilitários */
