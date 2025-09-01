@@ -2,24 +2,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: #2e7d32;
+.navbar-brand, .nav-link, .navbar-toggler-icon {
+    color: #2e7d32 !important;
 }
 
-.navbar-brand, .nav-link, .navbar-toggler-icon {
-    color: #fff !important;
+.navbar-nav {
+    gap: 12px;
 }
 
 a.nav-link {
-    border-bottom: 2px solid #2e7d32;
+    font-size: 18px;
+    border-bottom: 3px solid #fff;
 }
 
-.nav-link:hover {
-    border-bottom: 2px solid #fff;
+.nav-link:hover, .nav-link.selected {
+    border-bottom: 3px solid #2e7d32;
 }
 
 .carousel-item img {
-  max-height: 110vh;
+  max-height: calc(100vh - 60px);
   object-fit: cover;
 }
 
@@ -53,9 +54,25 @@ button.btn-eco:hover {
 }
 
 footer {
-    background-color: #2e7d32;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    border-top: 1px solid var(--border-light);
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
     margin-top: 40px;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #c8e6c9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
 }

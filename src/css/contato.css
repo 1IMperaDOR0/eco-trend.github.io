@@ -316,6 +316,25 @@ html {
 footer {
     background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
     border-top: 1px solid var(--border-light);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #c8e6c9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
 }
 
 /* Utilitários */
