@@ -76,6 +76,23 @@ body {
 }
 
 /* Header com gradiente */
+.header-gradient {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
 .bg-gradient-to-r {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
     position: relative;
@@ -245,6 +262,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -255,9 +273,17 @@ body {
     animation: fadeInUp 0.6s ease-out;
 }
 
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -266,12 +292,12 @@ body {
         height: 40px;
         font-size: 1rem;
     }
-    
+
     .btn-lg {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
     }
-    
+
     .social-link {
         width: 45px;
         height: 45px;
@@ -284,15 +310,15 @@ body {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
     .card-body {
         padding: 1.5rem;
     }
-    
+
     .contact-item {
         text-align: center;
     }
-    
+
     .contact-icon {
         margin: 0 auto 1rem auto;
     }
@@ -323,18 +349,18 @@ footer {
 }
 
 .footer h5 {
-  font-weight: bold;
-  margin-bottom: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .footer a {
-  color: #c8e6c9;
-  text-decoration: none;
-  transition: color 0.3s;
+    color: #c8e6c9;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 /* Utilitários */
