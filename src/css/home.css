@@ -1,0 +1,33 @@
+.carousel-item img {
+  max-height: calc(100vh - 60px);
+  object-fit: cover;
+}
+
+.category-title {
+    margin: 40px 0 20px;
+    color: #2e7d32;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.col img {
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
+
+button.btn-eco {
+  background-color: #2e7d32;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+button.btn-eco:hover {
+  background-color: #1b5e20;
+  color: #fff;
+  transform: scale(1.2);
+}
