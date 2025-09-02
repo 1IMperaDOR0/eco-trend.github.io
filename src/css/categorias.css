@@ -15,66 +15,6 @@
     --transition: all 0.3s ease;
 }
 
-/* Reset e estilos base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-    color: var(--text-dark);
-    background-color: var(--bg-light);
-}
-
-/* Navbar personalizada */
-.navbar {
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.navbar-brand {
-    color: var(--primary-green) !important;
-    transition: var(--transition);
-}
-
-.navbar-brand:hover {
-    color: var(--secondary-green) !important;
-    transform: scale(1.05);
-}
-
-.nav-link {
-    color: var(--text-dark) !important;
-    font-weight: 500;
-    transition: var(--transition);
-    position: relative;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: var(--primary-green) !important;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-green);
-    transition: var(--transition);
-    transform: translateX(-50%);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-}
-
 /* Header com gradiente */
 .header-gradient {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
@@ -407,31 +347,6 @@ html {
     100% {
         background-position: calc(200px + 100%) 0;
     }
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-    border-top: 1px solid var(--border-light);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-.footer h5 {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.footer a {
-    color: #c8e6c9;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #fff;
 }
 
 /* Utilitários */
