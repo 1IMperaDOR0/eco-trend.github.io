@@ -4,54 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/detalhes_produto.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detalhes_produto.css">
 </head>
 <body>
 
-<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg">
         <header class="container">
-=======
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
-        <div class="container">
->>>>>>> a6eab3abe6d2293dc3c5a496979e20cc68c1b172
             <a class="navbar-brand fw-bold text-success" href="../../index.html">
                 <h2 class="mb-0">🌱 Eco-Trend</h2>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <div class="navbar-toggler" type="div" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../../index.html">🏠 Início</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="categorias.html">📝 Categorias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">📞 Contato</a></li>
+                    <li class="nav-item"><a class="nav-link selected" href="../../index.html">🏠 Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">📝 Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">📞 Contato</a></li>   
                     <li class="nav-item"><a class="nav-link" href="#">🛒 Carrinho</a></li>
                 </ul>
             </div>
-        </div>
+        </header>
     </nav>
+
     <div class="container my-5">
         <div class="row g-5">
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-start">
-                <div class="product-image-container position-relative">
-                    <img src="../assets/images/roupas_e_acessorios.png" alt="Camiseta Orgânica" class="img-fluid rounded shadow">
-                    <span class="badge bg-success position-absolute top-0 end-0 m-2">Disponível</span>
+                <div class="product-image-container">
+                    <img src="..//assets/images/sensor_de_umidade.png" alt="Camiseta Orgânica" class="img-fluid rounded shadow">
+                    <span class="badge bg-success product-status">Disponível</span>
                 </div>
             </div>
+            
             <div class="col-12 col-md-6">
                 <div class="product-details-container">
-                    <h1 class="product-title">Camiseta Orgânica</h1>
-                    <p class="product-description lead">A camisa sustentável é feita com algodão orgânico, cultivado sem agrotóxicos.
-Seu processo de produção utiliza menos água e energia, reduzindo impactos ambientais.
-Os corantes usados são naturais, evitando poluição e resíduos tóxicos.
-Além de confortável e estilosa, ela promove o consumo consciente.
-Escolher essa camisa é apoiar práticas responsáveis e um futuro mais verde.</p>
+                    <h1 class="product-title">Sensor de Umidade</h1>
+                    <p class="product-description lead">O sensor de umidade é ideal para monitorar o nível de umidade em plantas, solos e ambientes. Ele ajuda a identificar a necessidade de rega, evitando desperdício de água e garantindo o cuidado correto. Compacto e fácil de usar, pode ser integrado a sistemas automáticos de irrigação. Perfeito para hortas, jardins e vasos dentro de casa. Uma solução prática, econômica e essencial para quem busca eficiência e sustentabilidade.</p>
                     <div class="d-flex align-items-center mb-3">
-                        <span class="product-price">R$ 89,90</span>
+                        <span class="product-price">R$ 32,90</span>
                         <div class="star-rating ms-auto">
                             <i class="fas fa-star text-warning"></i>
                             <i class="fas fa-star text-warning"></i>
@@ -60,11 +53,16 @@ Escolher essa camisa é apoiar práticas responsáveis e um futuro mais verde.</
                             <i class="fas fa-star text-warning"></i>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-lg w-100 btn-success add-to-cart-btn">Adicionar ao Carrinho</a>
+                    
+                    <a href="#" class="btn btn-lg btn-success w-100 add-to-cart-btn">
+                        Adicionar ao Carrinho
+                    </a>
+
                 </div>
             </div>
         </div>
     </div>
+
     <footer class="footer mt-5">
         <div class="container">
             <div class="row">
@@ -74,26 +72,30 @@ Escolher essa camisa é apoiar práticas responsáveis e um futuro mais verde.</
                     <p>Telefone: (11) 99999-9999</p>
                     <p>Endereço: Rua das Flores, 123 - São Paulo/SP</p>
                 </div>
+
                 <div class="col-md-4">
                     <h5>Políticas</h5>
                     <p><a href="#">Política de Privacidade</a></p>
                     <p><a href="#">Política de Trocas e Devoluções</a></p>
                     <p><a href="#">Termos de Uso</a></p>
                 </div>
+
                 <div class="col-md-4">
                     <h5>Redes Sociais</h5>
                     <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a> | 
                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a> | 
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a> | 
                     <a href="#" class="social-icon"><i class="fab fa-youtube"></i> Youtube</a> | 
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i> LinkeIn</a>
                 </div>
-            </div>
-            <div class="text-center mt-3">
-                <p>&copy; 2025 Eco-Trend | Produtos Sustentáveis para um Futuro Melhor 🌍</p>
+
+                <div class="text-center mt-3">
+                    <p>&copy; 2025 Eco-Trend | Produtos Sustentáveis para um Futuro Melhor 🌍</p>
+                </div>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
